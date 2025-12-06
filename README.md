@@ -3,6 +3,13 @@
 
 Bu proje, Walmart mağazalarının geçmiş satış verilerini, makroekonomik göstergeleri (TÜFE, İşsizlik, Yakıt Fiyatları) ve mağaza özelliklerini kullanarak haftalık satış tahminleri yapan uçtan uca bir Makine Öğrenmesi projesidir.
 
+## 🌐 Uygulamayı Canlı Dene (Live Demo)
+
+Projenin eğitilmiş modelini ve kullanıcı arayüzünü aşağıdaki linkten deneyebilirsiniz.
+
+ **Canlı Uygulama Linki (Streamlit Cloud):**
+ (https://walmart-sales-forecasting-2lvmonnqnlvhsntjkq9cnk.streamlit.app/)
+
 ##  Proje Amacı
 Perakende sektöründe doğru stok yönetimi ve finansal planlama için satış tahminleri kritiktir. Bu proje ile:
 - Mağaza, departman ve tarih bazlı satış tahminleri yapılması,
