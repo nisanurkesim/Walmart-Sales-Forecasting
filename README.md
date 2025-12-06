@@ -23,6 +23,7 @@ Kaggle Walmart Recruiting verisi kullanılmıştır.
 - **Tarih Aralığı:** 2010 - 2012
 - **Veri Boyutu:** 421,570 satır (Train seti)
 - **Özellikler:** Mağaza Tipi, Boyutu, Sıcaklık, Yakıt Fiyatı, TÜFE (CPI), İşsizlik Oranı, Tatil Bilgisi ve İndirimler (MarkDowns).
+- **Kaggle Proje Linki:** https://www.kaggle.com/code/nisanurkesim/walmart-sales-forecasting
 
 ##  Kurulum ve Çalıştırma
 
