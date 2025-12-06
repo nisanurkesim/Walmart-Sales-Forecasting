@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import os
+import requests
 from datetime import datetime
 from config import MODEL_PATH
 
@@ -12,15 +13,30 @@ st.set_page_config(
     layout="centered"
 )
 
+MODEL_DOWNLOAD_URL = "https://drive.google.com/uc?export=download&id=1fZ0UAsVXTFWsuPYdSfUJmBFtpPdDhA-H"
 
 # 2. Modeli Yükleme Fonksiyonu
+
 @st.cache_resource
 def load_model():
-    if not os.path.exists(MODEL_PATH):
-        st.error("Model dosyası bulunamadı, önce train.py dosyasını çalıştırın.")
-        return None
-    return joblib.load(MODEL_PATH)
 
+    os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+
+    # Model indirme
+    if not os.path.exists(MODEL_PATH):
+        st.warning("Model dosyası bulunamadı.")
+
+        try:
+            r = requests.get(MODEL_DOWNLOAD_URL, stream=True)
+            with open(MODEL_PATH, "wb") as f:
+                f.write(r.content)
+            st.success("Model başarıyla indirildi.")
+        except Exception as e:
+            st.error(f"İndirme hatası: {e}")
+            return None
+
+    # Modeli yükle
+    return joblib.load(MODEL_PATH)
 
 model = load_model()
 
