@@ -13,7 +13,7 @@ st.set_page_config(
     layout="centered"
 )
 
-MODEL_DOWNLOAD_URL = "https://github.com/nisanurkesim/Walmart-Sales-Forecasting/releases/download/v1.0/walmart_rf_model_optimized.pkl"
+MODEL_DOWNLOAD_URL = "https://github.com/nisanurkesim/Walmart-Sales-Forecasting/releases/download/v1.3.0/walmart_rf_model_optimized.pkl"
 
 # 2. Modeli Yükleme Fonksiyonu
 
