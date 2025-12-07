@@ -59,6 +59,7 @@ Walmart_Project/
 ├── data/            # Train, test, stores ve features csv dosyaları
 ├── models/          # Eğitilmiş model dosyası (.pkl)
 ├── notebooks/       # EDA, Feature Engineering ve Model denemeleri (.ipynb)
+├── docs/            # Validation, Monitoring, Business Fit
 ├── src/             # Kaynak kodlar (Modüler yapı)
 │   ├── train.py     # Model eğitim pipeline'ı (Preprocessing + Training)
 │   ├── inference.py # Tahminleme modülü (Model yükleme ve test)
