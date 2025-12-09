@@ -99,5 +99,6 @@ Modelin satış tahmininde en çok dikkat ettiği faktörler:
 
   - **Geliştirici:** Nisanur Kesim
   - **Linkedin:** www.linkedin.com/in/nisanur-kesim-756734313
+  - **E-Posta:** nisanurkesim91@gmail.com
 
 
